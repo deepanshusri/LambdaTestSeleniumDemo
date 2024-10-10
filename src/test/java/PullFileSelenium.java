@@ -21,8 +21,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class PullFileSelenium {
-    String username = "rahulkumarlambdatest";
-    String authkey = "dboZK7so8koMnIR1tN11aKfMgxyKtDpb90IlyaCj4n6n7tQeK6";
+    String username = "";
+    String authkey = "";
     public RemoteWebDriver driver;
     public String gridURL = "@hub.lambdatest.com/wd/hub";
     String status = "passed";
