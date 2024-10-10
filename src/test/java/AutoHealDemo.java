@@ -23,8 +23,8 @@ public class AutoHealDemo {
 
 	@BeforeMethod
 	public void setup(Method m, ITestContext ctx) throws MalformedURLException, Exception {
-		String username = "rahulkumarlambdatest";
-		String authkey = "dboZK7so8koMnIR1tN11aKfMgxyKtDpb90IlyaCj4n6n7tQeK6";
+		String username = "";
+		String authkey = "";
 		String hub = "@hub.lambdatest.com/wd/hub";
 
 		System.getenv("LT_BUILD_NAME");
@@ -74,7 +74,7 @@ public class AutoHealDemo {
 		// start tunnel
 
 		driver = new RemoteWebDriver(new URL(
-				"https://rahulkumarlambdatest:dboZK7so8koMnIR1tN11aKfMgxyKtDpb90IlyaCj4n6n7tQeK6@hub.lambdatest.com/wd/hub"),
+				"https://{LT_Username}:{LT_Access_Key}@hub.lambdatest.com/wd/hub"),
 				caps);
 
 		// t.start(options1);
